@@ -4,7 +4,7 @@
   "authors": [
     "Zohar Jackson <zohar@turinggroup.com>"
   ],
-  "main": "./dist/angular-validator.js",
+  "main": "./src/angular-validator.js",
   "description": "An easy to use, powerful and lightweight AngularJS validation directive.",
   "keywords": [
     "AngularJS",
