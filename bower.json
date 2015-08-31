@@ -34,5 +34,5 @@
     "font-awesome": ">=4.0.3",
     "angular-mocks": "~1.4.1"
   },
-  "homepage": "https://github.com/turinggroup/angular-validator"
+  "homepage": "https://github.com/russoturisto/visit-angular-validator"
 }
