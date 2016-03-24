@@ -1,10 +1,29 @@
 angular.module('angularValidator', []);
 
 angular.module('angularValidator').directive('angularValidator',
-    function() {
+    function($timeout) {
         return {
             restrict: 'A',
             link: function(scope, element, attrs, fn) {
+                skipCycles(2, scope, element, attrs, fn);
+            }
+        };
+
+    function skipCycles( //
+        numCycles, //
+        scope, element, attrs, fn //
+    ) {
+        if (numCycles > 0) {
+                $timeout(function () {
+                    skipCycles(--numCycles, scope, element, attrs, fn);
+                });
+                
+        } else {
+            linkAngularValidator(scope, element, attrs, fn);
+        }
+    }
+    
+    function linkAngularValidator(scope, element, attrs, fn) {
 
                 // This is the DOM form element
                 var DOMForm = angular.element(element)[0];
@@ -287,8 +306,7 @@ angular.module('angularValidator').directive('angularValidator',
                         }
                     }
                 }
-
             }
-        };
+
     }
 );
