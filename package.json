@@ -1,0 +1,20 @@
+{
+  "name": "angular-jwt",
+  "version": "0.2.9",
+  "description": "A mod of angularValidator",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "russoturisto",
+    "email": "russoturisto@hotmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/russoturisto/visit-angular-validator.git"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=5.0.0"
+  }
+}
