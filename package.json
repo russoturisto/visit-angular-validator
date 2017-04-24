@@ -1,5 +1,5 @@
 {
-  "name": "angular-jwt",
+  "name": "visit-angular-validator",
   "version": "0.2.9",
   "description": "A mod of angularValidator",
   "main": "index.js",
