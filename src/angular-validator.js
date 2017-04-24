@@ -1,3 +1,5 @@
+(function() {
+
 angular.module('angularValidator', []);
 
 angular.module('angularValidator').directive('angularValidator',
@@ -310,3 +312,5 @@ angular.module('angularValidator').directive('angularValidator',
 
     }
 );
+    
+}());
